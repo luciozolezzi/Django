@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Query Empleados</title>
+  </head>
+  <body>
+    {% if nombre %}
+      {{legajo}}<br>
+      {{nombre}}<br>
+      {{ingreso}}<br>
+      {{egreso}}<br>
+    {% else %}
+      <p>No hay resultados disponibles</p>
+    {% endif %}
+  </body>
+</html>

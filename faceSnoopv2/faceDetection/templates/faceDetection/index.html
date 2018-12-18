@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    {% if top_5 %}
+    <ul>
+      {% for p in top_5 %}
+          <h3> {{p.legajo}}  {{p.nombre}}</h3>
+      {% endfor %}
+    </ul>
+    {% else %}
+      <p>No hay resultados disponibles</p>
+    {% endif %}
+  </body>
+</html>

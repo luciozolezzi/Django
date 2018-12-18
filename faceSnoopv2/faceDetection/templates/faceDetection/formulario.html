@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario Empleados</title>
+  </head>
+  <body>
+    <form action="{% url 'faceDetection:query' %}" method="post" target="_blank">
+      {% csrf_token %}
+      <fieldset>
+        <legend>Empleado</legend>
+          Legajo: <input type="number" name="legajo" value="0"><br>
+          Nombre: <input type="text" name="nombre" value="Pepito Perez"><br>
+          Ingreso: <input type="time" name="ingreso" step="1"><br>
+          Egreso: <input type="time" name="egreso" step="1"><br>
+      </fieldset>
+      <input type="submit" value="Enviar"><br>
+    </form>
+  </body>
+</html>
