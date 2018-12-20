@@ -15,6 +15,16 @@ class Empleado(models.Model):
     def __str__(self):
         return self.nombre
 
+class Invitado(models.Model):
+    dni=models.IntegerField()
+    nombre=models.CharField(max_length=140)
+    empresa=models.CharField(max_length=140)
+    ingreso=models.TimeField('Horario de ingreso')  #'%H:%M:%S'
+    egreso=models.TimeField('Horario de egreso')    #'%H:%M:%S'
+
+    def __str__(self):
+        return self.nombre
+
 class FaceRectangle(models.Model):
     legajo=models.IntegerField()
     top=models.IntegerField()

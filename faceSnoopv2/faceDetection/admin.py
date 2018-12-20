@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-from .models import Empleado,FaceRectangle
+from .models import Empleado,Invitado,FaceRectangle
 
 class EmpleadoAdmin(admin.ModelAdmin):
     fieldsets = [
@@ -21,4 +21,5 @@ class EmpleadoAdmin(admin.ModelAdmin):
 # Register your models here.
 
 admin.site.register(Empleado,EmpleadoAdmin)
+admin.site.register(Invitado)
 admin.site.register(FaceRectangle)
